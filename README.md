@@ -21,3 +21,8 @@
 [TypeScript for JavaScript Programmers](https://www.typescriptlang.org/ko/docs/handbook/typescript-in-5-minutes.html).  
 
 본격적인 챕터로 넘어각 전에 타입스크립트에 대해 간단하게 알아보도록 합시다.
+
+- 타입 추론 (Types by Inference)
+- 타입 정의하기 (Defining Types)
+- 타입 구성 (Composing Types)
+- 구조적 타입 시스템 (Structural Type System)
