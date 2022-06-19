@@ -10,7 +10,7 @@
 - The Basics
 
 ## 1. The TypeScript Handbook
-[본문 확인 (Official)](https://www.typescriptlang.org/ko/docs/handbook/intro.html).  
+[본문 확인](https://www.typescriptlang.org/ko/docs/handbook/intro.html).  
 
 ### 핸드북 지침(Rule) 체크 
 - [x] 핸드북은 글을 편하게 읽는 것에 포커스를 맞추기 위해 내용의 간결성을 지향한다.
@@ -18,5 +18,6 @@
 - [x] 필요한 경우를 제외하고 타입스크립트와 상호작용하는 환경(React, Angular 등)에 대해 설명하지 않는다.
 
 ### 타입스크립트와 기존 언어간의 차이점
-[본문 확인 (TypeScript for JavaScript Programmers)](https://www.typescriptlang.org/ko/docs/handbook/typescript-in-5-minutes.html).  
-핸드북은 이 내용을 먼저 살펴보고 다음 챕터로 넘어가는 것을 제안하고 있습니다.
+[TypeScript for JavaScript Programmers](https://www.typescriptlang.org/ko/docs/handbook/typescript-in-5-minutes.html).  
+
+본격적인 챕터로 넘어각 전에 타입스크립트에 대해 간단하게 알아보도록 합시다.
