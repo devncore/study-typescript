@@ -4,12 +4,14 @@
 
 ## Contents
 
-- The TypeScript Handbook
-- The Basics
+- 1. The TypeScript Handbook
+- 2. The Basics
 
-## 1주차: The TypeScript Handbook
+## 1. The TypeScript Handbook
 [본문 확인 (Official)](https://www.typescriptlang.org/ko/docs/handbook/intro.html)
 
-카테고리
+#### 내용 구분
+
 - 핸드북에 대해서 (About this handbook)
 - 핸드북은 어떻 구성되어 있는가? (How is the Handbook Structured)
+- 시작하 (Get Started)
