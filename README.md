@@ -31,7 +31,7 @@
 
 # 타입 추론 (Types by Inference)
 
-TypeScript는 JavaScript의 코드를 받아들이면서 변수에 값이 할당될때 타입을 자동으로 추론하여 내부적으로 타입을 사용합니다.
+TypeScript는 JavaScript의 코드를 받아들이면서 변수에 값이 할당될때 타입을 자동으로 추론하여 내부적으로 타입을 사용합니다.<br />
 그래서 따로 타입을 명시적으로 선언할 필요가 없습니다.
 
 <br />
@@ -114,9 +114,8 @@ function deleteUser(user: User) {
 JavaScript에서 사용할 수 있는 원시 타입이 이미 있습니다. <br />
 `boolean`, `bigint`, `null`, `number`, `string`, `symbol`, `object`와 `undefined`는 인터페이스에서 사용할 수 있습니다.<br />
 TypeScript는 몇 가지를 추가해 목록을 확장합니다.<br />
-예를 들어, <br />
-`any` (무엇이든 허용), <br />
-`unknown` (무엇이든 허용이지만 타입을 좁혀서 사용해야 하는 의무가 있습니다), <br />
+`any` (무엇이든 허용합니다), <br />
+`unknown` (무엇이든 허용하지만 타입을 좁혀서 사용해야 하는 의무가 있습니다), <br />
 (참고: `any`와 `unknown`중 `unknown`을 사용하는것이 좀 더 안전한 방법입니다)<br />
 `never` (이 타입은 발생될 수 없습니다) <br />
 `void` (`undefined`를 리턴하거나 리턴 값이 없는 함수)<br />
@@ -160,7 +159,8 @@ TypeScript는 코드가 시간에 따라 변수가 변경되는 방식을 이해
 
 <br />
 
-예를 들어, `typeof obj === "string"`을 이용하여 `string`과 `array`를 구분할 수 있으며 TypeScript는 객체가 다른 코드 경로에 있음을 알게 됩니다.
+예를 들어, `typeof obj === "string"`을 이용하여 `string`과 `array`를 구분할 수 있으며 이로인해 상황에 맞는 인자를 사용하여<br />
+함수의 기능을 쉽게 확장할 수 있습니다.
 
 ```typescript
 function wrapInArray(obj: string | string[]) {
@@ -227,7 +227,7 @@ const point = { x: 12, y: 26 };
 printPoint(point);
 ```
 
-`point`변수는 `Point`타입으로 선언된 적이 없지만, TypeScript는 타입 검사에서 `point`의 형태와 `Point`의 형태를 비교합니다. 둘 다 같은 형태이기 때문에, 통과합니다.
+`point`변수는 `Point`타입으로 선언된 적이 없지만, TypeScript는 타입 검사에서 `point`의 형태와 `Point`의 형태를 비교합니다. 둘 다 같은 형태이기 때문에, 통과합니다.<br />
 
 형태 일치에는 일치시킬 객체의 필드의 하위 집합만 필요합니다.
 
