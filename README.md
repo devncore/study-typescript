@@ -131,6 +131,7 @@ JavaScript에서 사용할 수 있는 적은 종류의 원시 타입이 이미 �
 타입을 구축하기 위한 두 가지 구문이 있다는 것을 꽤 빠르게 알 수 있을 것입니다.: Interfaces and Types - interface를 우선적으로 사용하고 특정 기능이 필요할 때 type을 사용해야 합니다.
 
 </br>
+
 # 타입 구성 (Composing Types)
 
 객체들을 조합하여 더 크고 복잡한 객체를 만드는 방법과 유사하게 TypeScript에 타입으로 이를 수행하는 도구가 있습니다. 여러가지 타입을 이용하여 새 타입을 작성하기 위해 일상적인 코드에서 가장 많이 사용되는 두 가지 코드로는 유니언(Union)과 제네릭(Generic)이 있습니다.
@@ -169,6 +170,8 @@ TypeScript는 코드가 시간에 따라 변수가 변경되는 방식을 이해
 |undefined|typeof undefined === "undefined"|
 |function|typeof f === "function"|
 |array|Array.isArray(a)|
+
+</br>
 
 예를 들어, typeof obj === "string"을 이용하여 string과 array를 구분할 수 있으며 TypeScript는 객체가 다른 코드 경로에 있음을 알게 됩니다.
 
@@ -215,6 +218,7 @@ backpack.add(23);
 ```
 
 </br>
+
 # 구조적 타입 시스템 (Structural Type System)
 
 TypeScript의 핵심 원칙 중 하나는 타입 검사가 값이 있는 _형태_에 집중한다는 것입니다. 이는 때때로 “덕 타이핑(duck typing)” 또는 “구조적 타이핑” 이라고 불립니다.
