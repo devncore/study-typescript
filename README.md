@@ -31,32 +31,16 @@
 
 # 타입 추론 (Types by Inference)
 
-TypeScript는 JavaScript 언어를 알고 있으며 대부분의 경우 타입을 생성해줄 것입니다. 예를 들어 변수를 생성하면서 동시에 특정 값에 할당하는 경우, TypeScript는 그 값을 해당 변수의 타입으로 사용할 것입니다.
-
-```typescript
-let helloWorld = "Hello World";
-//  ^?
-```
-JavaScript가 동작하는 방식을 이해함으로써 TypeScript는 JavaScript 코드를 받아들이면서 타입을 가지는 타입 시스템을 구축할 수 있습니다. 이는 코드에서 타입을 명시하기 위해 추가로 문자를 사용할 필요가 없는 타입 시스템을 제공합니다. 이것이 위의 예제에서 TypeScript가 `helloWorld`가 `string`임을 알게 되는 방식입니다.
-
-JavaScript와 함께 VS Code를 사용하고 작업을 할 때 편집기의 자동 완성 기능을 사용해왔을 것입니다. 이는 TypeScript에 필수불가결한 JavaScript에 대한 이해가 JavaScript 작업을 개선하기 위해 내부적으로 사용되었기 때문입니다.
+TypeScript는 JavaScript의 코드를 받아들이면서 변수에 값이 할당될때 타입을 자동으로 추론하여 내부적으로 타입을 사용합니다.
+그래서 따로 타입을 명시적으로 선언할 필요가 없습니다.
 
 </br>
 
 # 타입 정의하기 (Defining Types)
 
-JavaScript는 다양한 디자인 패턴을 가능하게 하는 동적 언어입니다. 몇몇 디자인 패턴은 자동으로 타입을 제공하기 힘들 수 있는데 (동적 프로그래밍을 사용하고 있을 것이기 때문에) 이러한 경우에 TypeScript는 TypeScript에게 타입이 무엇이 되어야 하는지 명시 가능한 JavaScript 언어의 확장을 지원합니다.
+TypeScript는 기본적으로 값 할당시 자동으로 타입을 추론하지만 타입을 명시적으로 선언할 수 있는 방법을 제공합니다.
 
-다음은 `name: string`과 `id: number`을 포함하는 추론 타입을 가진 객체를 생성하는 예제입니다.
-
-```typescript
-const user = {
-  name: "Hayes",
-  id: 0,
-};
-```
-
-이 객체의 형태를 명시적으로 나타내기 위해서는 `interface` 로 선언합니다.
+객체의 형태를 명시적으로 나타내기 위해서는 `interface` 로 선언합니다.
 
 ```typescript
 interface User {
@@ -79,7 +63,6 @@ const user: User = {
 };
 ```
 해당 인터페이스에 맞지 않는 객체를 생성하면 TypeScript는 경고를 줍니다.
-
 
 ```typescript
 // @errors: 2322
@@ -126,7 +109,7 @@ function deleteUser(user: User) {
 }
 ```
 
-JavaScript에서 사용할 수 있는 적은 종류의 원시 타입이 이미 있습니다. `boolean`, `bigint`, `null`, `number`, `string`, `symbol`, `object`와 `undefined`는 인터페이스에서 사용할 수 있습니다. TypeScript는 몇 가지를 추가해 목록을 확장합니다. 예를 들어, `any` (무엇이든 허용합니다), unknown (이 타입을 사용하는 사람이 타입이 무엇인지 선언했는가를 확인하십시오), never (이 타입은 발생될 수 없습니다) `void` (`undefined`를 리턴하거나 리턴 값이 없는 함수).
+JavaScript에서 사용할 수 있는 원시 타입이 이미 있습니다. `boolean`, `bigint`, `null`, `number`, `string`, `symbol`, `object`와 `undefined`는 인터페이스에서 사용할 수 있습니다. TypeScript는 몇 가지를 추가해 목록을 확장합니다. 예를 들어, `any` (무엇이든 허용합니다), unknown (이 타입을 사용하는 사람이 타입이 무엇인지 선언했는가를 확인하십시오), never (이 타입은 발생될 수 없습니다) `void` (`undefined`를 리턴하거나 리턴 값이 없는 함수).
 
 타입을 구축하기 위한 두 가지 구문이 있다는 것을 꽤 빠르게 알 수 있을 것입니다. Interfaces and Types - interface를 우선적으로 사용하고 특정 기능이 필요할 때 `type`을 사용해야 합니다.
 
