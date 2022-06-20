@@ -38,7 +38,9 @@ TypeScript는 JavaScript의 코드를 받아들이면서 변수에 값이 할당
 
 # 타입 정의하기 (Defining Types)
 
-TypeScript는 기본적으로 값 할당시 자동으로 타입을 추론하지만 명시적 타입이 필요한 경우 interface와 type 두 가지 방법을 제공 합니다.
+TypeScript는 기본적으로 값 할당시 자동으로 타입을 추론하지만 명시적 타입이 필요한 경우 `interface`와 `type` 두 가지 방법을 제공 합니다.<br />
+(참고: `interface`를 우선적으로 사용하고 특정 기능이 필요할 때 `type`을 사용해야 합니다)
+
 
 객체의 형태를 명시적으로 나타내기 위해서는 `interface` 로 선언합니다.
 
@@ -114,17 +116,16 @@ JavaScript에서 사용할 수 있는 원시 타입이 이미 있습니다. <br 
 TypeScript는 몇 가지를 추가해 목록을 확장합니다.<br />
 예를 들어, <br />
 `any` (무엇이든 허용), <br />
-`unknown` (무엇이든 허용이지만 타입을 좁혀서 사용해야 하는 의무가 있다), <br />
+`unknown` (무엇이든 허용이지만 타입을 좁혀서 사용해야 하는 의무가 있습니다), <br />
+(참고: `any`와 `unknown`중 `unknown`을 사용하는것이 좀 더 안전한 방법입니다)<br />
 `never` (이 타입은 발생될 수 없습니다) <br />
 `void` (`undefined`를 리턴하거나 리턴 값이 없는 함수)<br />
-
-`interface`를 우선적으로 사용하고 특정 기능이 필요할 때 `type`을 사용해야 합니다.
 
 <br />
 
 # 타입 구성 (Composing Types)
 
-객체들을 조합하여 더 크고 복잡한 객체를 만드는 방법과 유사하게 TypeScript에 타입으로 이를 수행하는 도구가 있습니다. 여러가지 타입을 이용하여 새 타입을 작성하기 위해 일상적인 코드에서 가장 많이 사용되는 두 가지 코드로는 유니언(Union)과 제네릭(Generic)이 있습니다.
+여러가지 타입을 이용하여 새 타입을 작성하기 위해 일상적인 코드에서 가장 많이 사용되는 두 가지 코드로는 유니언(Union)과 제네릭(Generic)이 있습니다.
 
 ### 유니언 (Unions)
 
@@ -165,7 +166,6 @@ TypeScript는 코드가 시간에 따라 변수가 변경되는 방식을 이해
 function wrapInArray(obj: string | string[]) {
   if (typeof obj === "string") {
     return [obj];
-//          ^?
   } else {
     return obj;
   }
@@ -173,6 +173,7 @@ function wrapInArray(obj: string | string[]) {
 ```
 
 ### 제네릭 (Generics)
+
 TypeScript 제네릭은 타입에 변수를 제공하는 방법입니다.
 
 배열이 일반적인 예시이며, 제네릭이 없는 배열은 어떤 것이든 포함할 수 있습니다. 제네릭이 있는 배열은 배열 안의 값을 설명할 수 있습니다.
