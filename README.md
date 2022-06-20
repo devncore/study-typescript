@@ -78,7 +78,7 @@ const user: User = {
 };
 ```
 
-JavaScript는 클래스와 객체 지향 프로그래밍을 지원하기 때문에, TypeScript 또한 동일합니다. - 인터페이스는 클래스로도 선언할 수 있습니다.
+JavaScript는 클래스와 객체 지향 프로그래밍을 지원하기 때문에, TypeScript 또한 동일합니다. 인터페이스는 클래스로도 선언할 수 있습니다.
 ```typescript
 interface User {
   name: string;
