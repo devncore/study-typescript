@@ -29,6 +29,8 @@
 
 <br />
 
+------
+
 # 타입 추론 (Types by Inference)
 
 TypeScript는 JavaScript의 코드를 받아들이면서 변수에 값이 할당될때 타입을 자동으로 추론하여 내부적으로 타입을 사용합니다.<br />
