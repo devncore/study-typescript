@@ -27,6 +27,7 @@
 - 타입 구성 (Composing Types)
 - 구조적 타입 시스템 (Structural Type System)
 
+</br>
 
 # 타입 추론 (Types by Inference)
 
@@ -40,7 +41,7 @@ JavaScript가 동작하는 방식을 이해함으로써 TypeScript는 JavaScript
 
 JavaScript와 함께 VS Code를 사용하고 작업을 할 때 편집기의 자동 완성 기능을 사용해왔을 것입니다. 이는 TypeScript에 필수불가결한 JavaScript에 대한 이해가 JavaScript 작업을 개선하기 위해 내부적으로 사용되었기 때문입니다.
 
-
+</br>
 
 # 타입 정의하기 (Defining Types)
 
@@ -129,7 +130,7 @@ JavaScript에서 사용할 수 있는 적은 종류의 원시 타입이 이미 �
 
 타입을 구축하기 위한 두 가지 구문이 있다는 것을 꽤 빠르게 알 수 있을 것입니다.: Interfaces and Types - interface를 우선적으로 사용하고 특정 기능이 필요할 때 type을 사용해야 합니다.
 
-
+</br>
 # 타입 구성 (Composing Types)
 
 객체들을 조합하여 더 크고 복잡한 객체를 만드는 방법과 유사하게 TypeScript에 타입으로 이를 수행하는 도구가 있습니다. 여러가지 타입을 이용하여 새 타입을 작성하기 위해 일상적인 코드에서 가장 많이 사용되는 두 가지 코드로는 유니언(Union)과 제네릭(Generic)이 있습니다.
@@ -213,7 +214,7 @@ const object = backpack.get();
 backpack.add(23);
 ```
 
-
+</br>
 # 구조적 타입 시스템 (Structural Type System)
 
 TypeScript의 핵심 원칙 중 하나는 타입 검사가 값이 있는 _형태_에 집중한다는 것입니다. 이는 때때로 “덕 타이핑(duck typing)” 또는 “구조적 타이핑” 이라고 불립니다.
@@ -289,8 +290,3 @@ printPoint(newVPoint); // prints "13, 56"
 ```
 
 객체 또는 클래스에 필요한 모든 속성이 존재한다면, TypeScript는 구현 세부 정보에 관계없이 일치하게 봅니다.
-
-
-
-
-
