@@ -27,18 +27,18 @@
 - 타입 구성 (Composing Types)
 - 구조적 타입 시스템 (Structural Type System)
 
-</br>
+<br />
 
 # 타입 추론 (Types by Inference)
 
 TypeScript는 JavaScript의 코드를 받아들이면서 변수에 값이 할당될때 타입을 자동으로 추론하여 내부적으로 타입을 사용합니다.
 그래서 따로 타입을 명시적으로 선언할 필요가 없습니다.
 
-</br>
+<br />
 
 # 타입 정의하기 (Defining Types)
 
-TypeScript는 기본적으로 값 할당시 자동으로 타입을 추론하지만 타입을 명시적으로 선언할 수 있는 방법을 제공합니다.
+TypeScript는 기본적으로 값 할당시 자동으로 타입을 추론하지만 명시적 타입이 필요한 경우 interface와 type 두 가지 방법을 제공 합니다.
 
 객체의 형태를 명시적으로 나타내기 위해서는 `interface` 로 선언합니다.
 
@@ -109,23 +109,26 @@ function deleteUser(user: User) {
 }
 ```
 
-JavaScript에서 사용할 수 있는 원시 타입이 이미 있습니다. `boolean`, `bigint`, `null`, `number`, `string`, `symbol`, `object`와 `undefined`는 인터페이스에서 사용할 수 있습니다. TypeScript는 몇 가지를 추가해 목록을 확장합니다. 예를 들어, `any` (무엇이든 허용합니다), unknown (이 타입을 사용하는 사람이 타입이 무엇인지 선언했는가를 확인하십시오), never (이 타입은 발생될 수 없습니다) `void` (`undefined`를 리턴하거나 리턴 값이 없는 함수).
+JavaScript에서 사용할 수 있는 원시 타입이 이미 있습니다. <br />
+`boolean`, `bigint`, `null`, `number`, `string`, `symbol`, `object`와 `undefined`는 인터페이스에서 사용할 수 있습니다.<br />
+TypeScript는 몇 가지를 추가해 목록을 확장합니다.<br />
+예를 들어, <br />
+`any` (무엇이든 허용), <br />
+`unknown` (무엇이든 허용이지만 타입을 좁혀서 사용해야 하는 의무가 있다), <br />
+`never` (이 타입은 발생될 수 없습니다) <br />
+`void` (`undefined`를 리턴하거나 리턴 값이 없는 함수)<br />
 
-타입을 구축하기 위한 두 가지 구문이 있다는 것을 꽤 빠르게 알 수 있을 것입니다. Interfaces and Types - interface를 우선적으로 사용하고 특정 기능이 필요할 때 `type`을 사용해야 합니다.
+`interface`를 우선적으로 사용하고 특정 기능이 필요할 때 `type`을 사용해야 합니다.
 
-</br>
+<br />
 
 # 타입 구성 (Composing Types)
 
 객체들을 조합하여 더 크고 복잡한 객체를 만드는 방법과 유사하게 TypeScript에 타입으로 이를 수행하는 도구가 있습니다. 여러가지 타입을 이용하여 새 타입을 작성하기 위해 일상적인 코드에서 가장 많이 사용되는 두 가지 코드로는 유니언(Union)과 제네릭(Generic)이 있습니다.
 
 ### 유니언 (Unions)
-유니언은 타입이 여러 타입 중 하나일 수 있음을 선언하는 방법입니다. 예를 들어, `boolean` 타입을 `true` 또는 `false`로 설명할 수 있습니다:
-```typescript
-type MyBool = true | false;
-```
 
-참고: `MyBool`위에 마우스를 올린다면, `boolean`으로 분류된 것을 볼 수 있습니다 - 구조적 타입 시스템의 프로퍼티며, 나중에 살펴보겠습니다.
+유니언은 타입이 여러 타입 중 하나일 수 있음을 선언하는 방법입니다.
 
 유니언 타입이 가장 많이 사용된 사례 중 하나는 값이 다음과 같이 허용되는 `string` 또는 `number`의 리터럴집합을 설명하는 것입니다.
 
@@ -154,7 +157,7 @@ TypeScript는 코드가 시간에 따라 변수가 변경되는 방식을 이해
 |function|typeof f === "function"|
 |array|Array.isArray(a)|
 
-</br>
+<br />
 
 예를 들어, `typeof obj === "string"`을 이용하여 `string`과 `array`를 구분할 수 있으며 TypeScript는 객체가 다른 코드 경로에 있음을 알게 됩니다.
 
@@ -170,7 +173,7 @@ function wrapInArray(obj: string | string[]) {
 ```
 
 ### 제네릭 (Generics)
-TypeScript 제네릭 시스템에 대해 자세히 알아볼 수 있지만, 1분 정도의 수준 높은 설명을 하기 위해, 제네릭은 타입에 변수를 제공하는 방법입니다.
+TypeScript 제네릭은 타입에 변수를 제공하는 방법입니다.
 
 배열이 일반적인 예시이며, 제네릭이 없는 배열은 어떤 것이든 포함할 수 있습니다. 제네릭이 있는 배열은 배열 안의 값을 설명할 수 있습니다.
 
@@ -200,11 +203,11 @@ const object = backpack.get();
 backpack.add(23);
 ```
 
-</br>
+<br />
 
 # 구조적 타입 시스템 (Structural Type System)
 
-TypeScript의 핵심 원칙 중 하나는 타입 검사가 값이 있는 _형태_에 집중한다는 것입니다. 이는 때때로 “덕 타이핑(duck typing)” 또는 “구조적 타이핑” 이라고 불립니다.
+TypeScript의 핵심 원칙 중 하나는 타입 검사가 값이 있는 형태에 집중한다는 것입니다. 이는 때때로 “덕 타이핑(duck typing)” 또는 “구조적 타이핑” 이라고 불립니다.
 
 구조적 타입 시스템에서 두 객체가 같은 형태를 가지면 같은 것으로 간주됩니다.
 
