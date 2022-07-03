@@ -11,11 +11,8 @@
 
 Visual Studio 환경에서 타입스크립트를 사용할 경우에는 Nuget 패키지를 통해 설치합니다.
 
-### Wiki
-
-
 ## Wiki Contents
-다음 아래 내용들을 위키로 제공합니다. [DevNcore 위키](https://github.com/devncore/study-typescript/wiki)
+다음 아래 내용들을 위키로 제공합니다. [Wiki](https://github.com/devncore/study-typescript/wiki)
 
 - [핸드북 소개](https://github.com/devncore/study-typescript/wiki/the-typescript-handbook)
 - [TS와 JS 비교](https://github.com/devncore/study-typescript/wiki/typescript-javascript)
