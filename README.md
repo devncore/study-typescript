@@ -13,4 +13,4 @@
 이 레포지토리에서는 다음과 같은 내용을 다루고 있습니다.
 
 - [핸드북 소개](https://github.com/devncore/study-typescript/wiki/the-typescript-handbook)
-- [The Basics]
+- [TS와 JS 비교](https://github.com/devncore/study-typescript/wiki/typescript-javascript)
