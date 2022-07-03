@@ -23,4 +23,4 @@ Visual Studio 환경에서 타입스크립트를 사용할 경우에는 Nuget �
 
 - [핸드북 소개](https://github.com/devncore/study-typescript/wiki/the-typescript-handbook)
 - [타입스크립트 이론](https://github.com/devncore/study-typescript/wiki/typescript-javascript)
-- [환경설치](#)
+- [환경설치](https://github.com/devncore/study-typescript/wiki/install)
