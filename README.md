@@ -29,4 +29,5 @@
 - [타입](https://github.com/devncore/study-typescript/wiki/types)
   - [기본 요소](https://github.com/devncore/study-typescript/wiki/primitives)
   - [배열](https://github.com/devncore/study-typescript/wiki/array)
+  - [매개변수 타입 표기](https://github.com/devncore/study-typescript/wiki/method-type)
 <img width="1009" alt="스크린샷 2022-07-03 오후 7 16 36" src="https://user-images.githubusercontent.com/52397976/177035246-dce6986a-42b6-43da-b139-393d02ecfabb.png">
