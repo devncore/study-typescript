@@ -14,7 +14,7 @@
 | 언어 | 설계 | 개발 툴 | 다운로드 |
 |:---:|:---:|:----:|:---:|
 | ![image](https://user-images.githubusercontent.com/52397976/177034011-6303a780-501b-436a-95c1-c91767146666.png) | ![image](https://user-images.githubusercontent.com/52397976/177034077-4d5b5198-dfe2-4172-b71f-d1c18b070f71.png) | ![image](https://user-images.githubusercontent.com/52397976/177034155-ef396ea8-ef62-4166-8f4c-1f543f53b9d0.png) | ![image](https://user-images.githubusercontent.com/52397976/177034270-2d244fb5-c15b-4388-b3d5-6977d1217c4d.png) |
-| TypeScript | Microsoft | Visual Studio Code | NPM (Node 환경에서) |
+| TypeScript | Microsoft | Visual Studio Code | NPM (Node.js) |
 
 ## Wiki Contents
 다음 아래 내용들을 위키로 제공합니다. [Wiki](https://github.com/devncore/study-typescript/wiki)
