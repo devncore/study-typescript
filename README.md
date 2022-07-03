@@ -21,8 +21,8 @@ Visual Studio 환경에서 타입스크립트를 사용할 경우에는 Nuget �
 ## Wiki Contents
 다음 아래 내용들을 위키로 제공합니다. [Wiki](https://github.com/devncore/study-typescript/wiki)
 
-<img width="1009" alt="스크린샷 2022-07-03 오후 7 16 36" src="https://user-images.githubusercontent.com/52397976/177035246-dce6986a-42b6-43da-b139-393d02ecfabb.png">
-
 - [핸드북 소개](https://github.com/devncore/study-typescript/wiki/the-typescript-handbook)
 - [타입스크립트 이론](https://github.com/devncore/study-typescript/wiki/typescript-javascript)
 - [환경설치](https://github.com/devncore/study-typescript/wiki/install)
+
+<img width="1009" alt="스크린샷 2022-07-03 오후 7 16 36" src="https://user-images.githubusercontent.com/52397976/177035246-dce6986a-42b6-43da-b139-393d02ecfabb.png">
