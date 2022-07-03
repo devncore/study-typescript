@@ -21,10 +21,10 @@
 
 - [핸드북 소개](https://github.com/devncore/study-typescript/wiki/the-typescript-handbook)
 - [타입스크립트 이론](https://github.com/devncore/study-typescript/wiki/typescript-javascript)
-  - [타입 추론 (Types by Inference)](inference)
-  - [타입 정의하기 (Defining Types)](defining-types)
-  - [타입 구성 (Composing Types)](composing-types)
-  - [구조적 타입 시스템 (Structural Type System)](structural-type-system)
+  - [타입 추론 (Types by Inference)](https://github.com/devncore/study-typescript/wiki/inference)
+  - [타입 정의하기 (Defining Types)](https://github.com/devncore/study-typescript/wiki/defining-types)
+  - [타입 구성 (Composing Types)](https://github.com/devncore/study-typescript/wiki/composing-types)
+  - [구조적 타입 시스템 (Structural Type System)](https://github.com/devncore/study-typescript/wiki/structural-type-system)
 - [설치하기](https://github.com/devncore/study-typescript/wiki/install)
 
 <img width="1009" alt="스크린샷 2022-07-03 오후 7 16 36" src="https://user-images.githubusercontent.com/52397976/177035246-dce6986a-42b6-43da-b139-393d02ecfabb.png">
