@@ -12,5 +12,5 @@
 ## Wiki Contents
 이 레포지토리에서는 다음과 같은 내용을 다루고 있습니다.
 
-- [The TypeScript Handbook](https://github.com/devncore/study-typescript/wiki/the-typescript-handbook)
+- [핸드북 소개](https://github.com/devncore/study-typescript/wiki/the-typescript-handbook)
 - [The Basics]
