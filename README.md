@@ -27,9 +27,9 @@
   - [구조적 타입 시스템 (Structural Type System)](https://github.com/devncore/study-typescript/wiki/structural-type-system)
 - [설치하기](https://github.com/devncore/study-typescript/wiki/install)
 - [타입](https://github.com/devncore/study-typescript/wiki/types)
-  - [기본 요소](https://github.com/devncore/study-typescript/wiki/primitives)
-  - [배열](https://github.com/devncore/study-typescript/wiki/array)
+  - [기본 요소 (Primitives](https://github.com/devncore/study-typescript/wiki/primitives)
+  - [배열 (Array)](https://github.com/devncore/study-typescript/wiki/array)
   - [매개변수 타입 표기](https://github.com/devncore/study-typescript/wiki/method-type)
   - [유형 좁히기 (Narrowing)](https://github.com/devncore/study-typescript/wiki/narrowing)
-  - [typeof 유형](https://github.com/devncore/study-typescript/wiki/typeof)
+  - [타입 가드 Typeof guards)](https://github.com/devncore/study-typescript/wiki/typeof)
 <img width="1009" alt="스크린샷 2022-07-03 오후 7 16 36" src="https://user-images.githubusercontent.com/52397976/177035246-dce6986a-42b6-43da-b139-393d02ecfabb.png">
