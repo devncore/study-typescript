@@ -31,4 +31,5 @@
   - [배열](https://github.com/devncore/study-typescript/wiki/array)
   - [매개변수 타입 표기](https://github.com/devncore/study-typescript/wiki/method-type)
 - [유형 좁히기 (Narrowing)](https://github.com/devncore/study-typescript/wiki/narrowing)
+- [typeof 유형](https://github.com/devncore/study-typescript/wiki/typeof)
 <img width="1009" alt="스크린샷 2022-07-03 오후 7 16 36" src="https://user-images.githubusercontent.com/52397976/177035246-dce6986a-42b6-43da-b139-393d02ecfabb.png">
