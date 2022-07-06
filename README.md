@@ -27,7 +27,7 @@
   - [구조적 타입 시스템 (Structural Type System)](https://github.com/devncore/study-typescript/wiki/structural-type-system)
 - [설치하기](https://github.com/devncore/study-typescript/wiki/install)
 - [타입](https://github.com/devncore/study-typescript/wiki/types)
-  - [기본 요소 (Primitives](https://github.com/devncore/study-typescript/wiki/primitives)
+  - [기본 요소 (Primitives)](https://github.com/devncore/study-typescript/wiki/primitives)
   - [배열 (Array)](https://github.com/devncore/study-typescript/wiki/array)
   - [매개변수 타입 표기](https://github.com/devncore/study-typescript/wiki/method-type)
   - [유형 좁히기 (Narrowing)](https://github.com/devncore/study-typescript/wiki/narrowing)
